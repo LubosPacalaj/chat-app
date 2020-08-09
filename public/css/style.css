@@ -1,0 +1,134 @@
+body {
+  justify-content: center;
+  display: flex;
+  margin: 42px;
+}
+.screen-border {
+  border-radius: 15px;
+  border: 1px solid black;
+}
+#screen {
+  display: flex;
+  box-sizing: border-box;
+  width: 300px;
+  height: 480px;
+  padding: 12px 18px;
+}
+#online-user {
+  margin-top: 10px;
+}
+#online-user p {
+  font-size: 10px;
+  display: inline;
+  margin-left: 5px;
+  border: 1px solid green;
+  background-color: green;
+  color: white;
+  border-radius: 15px;
+  padding: 0px 5px;
+}
+#offline-user {
+  margin-top: 10px;
+}
+#offline-user p {
+  font-size: 10px;
+  display: inline;
+  margin-left: 5px;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+  padding: 0px 5px;
+}
+#screen .content {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#chat-board {
+  margin: 0;
+  padding: 0;
+  flex: 1 1 100%;
+  overflow-y: scroll;
+}
+
+#chat-board ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#chat-board .message-wrapper {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  height: 42px;
+}
+
+#chat-board .message {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  min-width: 42px;
+  min-height: 42px;
+  height: auto;
+  padding: 0px 18px;
+  border-radius: 15px;
+}
+
+#chat-board .message-sent {
+  background-color: #92b0eb;
+  align-self: flex-end;
+}
+
+#chat-board .message-received {
+  background-color: #b0eb92;
+  /* align-self: flex-start; */
+}
+
+#chat-form form {
+  display: flex;
+  align-items: center;
+}
+
+#chat-form input,
+#chat-form button {
+  border-radius: 20px;
+  margin: 4px;
+  padding: 0;
+  outline: none;
+}
+
+#chat-form input {
+  flex: 3;
+  height: 24px;
+  border: 1px solid black;
+  padding-left: 12px;
+}
+
+#chat-form button {
+  flex: 1;
+  height: 28px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+#chat-board .message-name {
+  color: #a0a0a0;
+  align-self: flex-start;
+}
+#chat-board .message-text {
+  align-self: flex-start;
+}
+#messages img {
+  width: 8%;
+  float: left;
+  border: 3px solid #b0eb92;
+  border-radius: 100%;
+  margin-right: 3px;
+  margin-top: 10px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Chat app</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.1.6/chance.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <div class="screen-border">
+      <div id="online-user">
+        <!-- onlineuser -->
+      </div>
+      <div id="offline-user">
+        <!-- onlineuser -->
+      </div>
+      <section id="screen">
+        <div class="content">
+          <div id="chat-board">
+            <ul id="messages"></ul>
+          </div>
+
+          <div id="chat-form">
+            <form>
+              <input
+                id="chat-message"
+                autocomplete="off"
+                placeholder="Start typing.."
+              />
+              <button id="send_button">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>
